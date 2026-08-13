@@ -4,8 +4,6 @@ English | [中文](README.zh.md)
 
 A Vision-Language-Model (VLM) analyzer plugin for **DeepSeek Harness** (`dsh`). It gives the AI an `analyze_image` tool backed by primary/backup OpenAI-compatible vision endpoints with automatic failover, and adds an auto-saving **Settings → Vision Models (VLM)** page (English/中文).
 
-The name echoes the science-fiction story *带上她的眼睛 (To Take Her Eyes)* by Liu Cixin.
-
 ## Features
 
 - **`analyze_image` tool** registered on the global tools registry — available in every session.
