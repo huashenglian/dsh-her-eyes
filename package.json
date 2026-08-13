@@ -1,0 +1,40 @@
+{
+    "name":  "dsh-her-eyes",
+    "version":  "1.2.0",
+    "description":  "Application-level Vision-Language-Model (VLM) analyzer for DeepSeek Harness: analyze_image tool with primary/backup OpenAI-compatible endpoints, automatic failover, and an auto-saving web settings page.",
+    "type":  "module",
+    "main":  "./lib/index.js",
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./lib/client.js",
+                    "./cordis.patch.yml":  "./cordis.patch.yml",
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "lib/index.js",
+                  "lib/client.js",
+                  "cordis.patch.yml",
+                  "README.md",
+                  "README.zh.md"
+              ],
+    "license":  "MIT",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/huashenglian/dsh-her-eyes.git"
+                   },
+    "homepage":  "https://github.com/huashenglian/dsh-her-eyes",
+    "bugs":  {
+                 "url":  "https://github.com/huashenglian/dsh-her-eyes/issues"
+             },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "inject":  [
+                                              "@deepseek-ai/dsh-client-runtime"
+                                          ],
+                               "platform":  "web"
+                           }
+            }
+}
