@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文
 
-用于 **DeepSeek Harness**(`dsh`)的视觉语言模型(VLM)分析器插件。为 AI 提供 `analyze_image` 工具,底层接入主/备两个 OpenAI 兼容视觉端点并支持自动切换;同时在 Web 设置中新增**设置 → 视觉模型 (VLM)**面板(自动保存,支持中/英文)。
+用于 **DeepSeek Harness**的视觉语言模型(VLM)分析器插件。为 AI 提供 `analyze_image` 工具,底层接入主/备两个 OpenAI 兼容视觉端点并支持自动切换;同时在 Web 设置中新增**设置 → 视觉模型 (VLM)**面板(自动保存,支持中/英文)。
 
 ## 功能
 
